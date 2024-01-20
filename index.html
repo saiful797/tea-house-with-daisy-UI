@@ -1,21 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tea House</title>
 
-    </header>
+        <!-- Font awesome icons link -->
+        <script src="https://kit.fontawesome.com/c5fa10a8f0.js" crossorigin="anonymous"></script>
 
-    <main>
+        <!-- Tailwind custom color -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+          </script>
 
-    </main>
+        <!-- Tailwind and daisy UI -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Manrope google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <footer>
-        
-    </footer>
-</body>
+        <!-- CSS link -->
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body data-theme="light", class="font-manrope">
+        <header class="container mx-auto">
+            <div class="hero">
+                <div class="hero-content flex-col lg:flex-row">
+                    <div>
+                        <h1 class="text-7xl font-extrabold">
+                        It's good<br> 
+                        tea time at<br>
+                        The Tea House</h1>
+                        <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                    
+                    <div>
+                        <img src="images/banner.png" class="max-w-sm" />
+                        <!-- Rating Badge -->
+                        <div class="-mt-16 rounded-lg flex items-center gap-x-3 drop-shadow-lg bg-white p-5 w-60">
+                            <i class="fa-solid fa-star text-4xl text-amber-400 "></i>
+                            <div>
+                                <h3>5.00</h3>
+                                <p>Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </header>
+
+        <main class="container mx-auto">
+            <!-- Featured Section -->
+            <section class="text-center my-24">
+                <h2 class="text-5xl font-extrabold">
+                    Our Featured Products
+                </h2>
+                <p class="font-semibold my-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+
 </html>
